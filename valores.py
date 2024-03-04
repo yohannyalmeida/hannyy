@@ -1,14 +1,12 @@
-soma= 0
-contatador =0
-print("digite os numeros para calcular a média.digite 0 (zero) para terminar.")
-while True:
-    valor=float(input ("digite um numero"))
-    if valor ==0:
-        break
-    soma +=valor  
-    contatador += 1
-    if contatador ==0:
-        print("nenhum numero foi insirido.")
+acrs=10
+soma=0
+i=0
+n=int(input("mquantos valores voce quer?/n"))
+
+while i <n:
+    i+=1
+    soma+= float(input(f"digite o {i}º valor:"))
+    if soma <200:
+        print("a soma é maior que 200,o valor final com acrecimo de 10% é:", soma*(1+acrs/100))
     else:
-        media =soma/contatador
-        print("a media dos numeros insiridos é:", media)
+        print(" a soma e igual a",soma )
